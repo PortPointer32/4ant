@@ -1,0 +1,14 @@
+[Unit]
+Description=4ant
+After=network.target
+
+[Service]
+User=str
+Group=str
+
+WorkingDirectory=/home/str/4ant/
+Environment="PYTHONPATH=/home/str/4ant/"
+ExecStart=/home/str/4ant/.venv/bin/python /home/str/4ant/bot_main.py
+
+[Install]
+WantedBy=multi-user.target
