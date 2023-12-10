@@ -17,7 +17,7 @@ from cfg.database import Database
 scheduler = AsyncIOScheduler(timezone="Europe/Moscow")
 scheduler.start()
 
-db = Database('/home/str/3rick/cfg/database')
+db = Database('/home/str/4ant/cfg/database')
 
 
 # ===================================================
@@ -140,14 +140,14 @@ async def input_token_bot(message: Message, state: FSMContext):
                 db.add_admin(f"|{message.text}", "TOKEN")
                 # ЗАПУСК
                 os.kill(int(my_pid), 9)
-                subprocess.Popen(["/home/str/3rick/.venv/bin/python", "/home/str/3rick/start_all_bot.py"])
+                subprocess.Popen(["/home/str/4ant/.venv/bin/python", "/home/str/4ant/start_all_bot.py"])
 
                 await message.answer(MESSAGES['accept_new_bot'], reply_markup=BUTTON_TYPES["BTN_HOME_ADMIN"])
         except:
             db.add_admin(f"|{message.text}", "TOKEN")
             # ЗАПУСК
             os.kill(int(my_pid), 9)
-            subprocess.Popen(["/home/str/3rick/.venv/bin/python", "/home/str/3rick/start_all_bot.py"])
+            subprocess.Popen(["/home/str/4ant/.venv/bin/python", "/home/str/4ant/start_all_bot.py"])
             
             await message.answer(MESSAGES['accept_new_bot'], reply_markup=BUTTON_TYPES["BTN_HOME_ADMIN"])
         await state.finish()
