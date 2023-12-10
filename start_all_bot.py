@@ -92,13 +92,14 @@ def bot_init(event_loop, token):
         btn_my_bot = InlineKeyboardButton(text="Мои боты", callback_data="my_bot")
         btn_ref = InlineKeyboardButton(text="Реферальная программа", callback_data="ref")
         btn_last_order = InlineKeyboardButton(text="Последний заказ", callback_data="last_order")
-        btn_operator = InlineKeyboardButton(text="Оператор", url="https://t.me/bsk_alicesshop")
-        btn_support = InlineKeyboardButton(text="✨САПОРТ✨", url="https://t.me/artrsai")
-        btn_wrk = InlineKeyboardButton(text="💥ОПЕРАТОР", url="https://t.me/ajgonc")
-        btn_1 = InlineKeyboardButton(text="🚀РАБОТА🚀", url="https://t.me/SEVER2work")
-        btn_2 = InlineKeyboardButton(text="💥Наш сайт💥", url="https://ricky18.cc/")
+        btn_operator = InlineKeyboardButton(text="Оператор", url="https://t.me/italil_yi")
+        btn_support = InlineKeyboardButton(text="Тех.поддержка", url="https://t.me/ultraviedios")
+        btn_wrk = InlineKeyboardButton(text="💸ОТДЕЛ КАДРОВ💸", url="https://t.me/+88803410592")
+        btn_1 = InlineKeyboardButton(text="🗓НОВОСТИ🗓", url="http://tiny.cc/AK163_KONT")
+        btn_2 = InlineKeyboardButton(text="📃ОТЗЫВЫ📝", url="http://tiny.cc/AK163_KONT")
+        btn_3 = InlineKeyboardButton(text="🖇НАШ ИНФО САЙТ🖇", url="http://antik24.vip/")
         return keyboard.add(btn_balance).add(btn_my_bot).add(btn_ref).add(btn_last_order).add(btn_operator).add(
-            btn_support).add(btn_wrk).add(btn_1).add(btn_2)
+            btn_support).add(btn_wrk).add(btn_1).add(btn_2).add(btn_3)
 
     # ============ СОЗДАНИЕ КЛАВИАТУРЫ РАЙОНА ===========
     def generation_keyboard_district(city_name):
